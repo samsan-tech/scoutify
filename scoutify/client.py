@@ -47,6 +47,33 @@ class Scoutify(object):
         params = {'ids': ",".join(artist_ids)}
         resp = rq.get(url, params=params, headers=self._header)
         return resp.json()
-
+    
+    def playlist(self, playlist_ids):
+        if not self._header:
+            return "No token available"
+        url = "{}/{}/{}".format(SPOTIFY_API_BASE_URL, 'playlists', playlist_ids)
+        resp = rq.get(url, headers=self._header)
+        return resp.json()
+    
+    def playlist_tracks(self, playlist_ids):
+        if not self._header:
+            return "No token available"
+        url = "{}/{}/{}/{}".format(SPOTIFY_API_BASE_URL, 'playlists', playlist_ids, 'tracks')
+        resp = rq.get(url, headers=self._header)
+        return resp.json()
+    
+    def current_user_playlists(self):
+        if not self._header:
+            return "No token available"
+        url = "{}/{}/{}".format(SPOTIFY_API_BASE_URL, 'me', 'playlists')
+        resp = rq.get(url, headers=self._header)
+        return resp.json()
+    
+    def user_playlists(self, user_ids):
+        if not self._header:
+            return "No token available"
+        url = "{}/{}/{}/{}".format(SPOTIFY_API_BASE_URL, 'users', user_ids, 'playlists')
+        resp = rq.get(url, headers=self._header)
+        return resp.json()
 
 
