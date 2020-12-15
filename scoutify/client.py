@@ -29,14 +29,14 @@ class Scoutify(object):
         self._access_token = access_token
         self._header = {'Authorization': 'Bearer {}'.format(access_token)}
 
-    def search(self, search_type, artist_name):
+    def search(self, search_type, q):
         if not self._header:
             return "No token available"
         search_url = "{}/{}".format(SPOTIFY_API_BASE_URL, 'search')
         if search_type.lower() not in ['artist', 'track', 'album', 'playlist']:
             print('Invalid search type')
             return
-        params = {'type': search_type.lower(), 'q': artist_name.lower()}
+        params = {'type': search_type.lower(), 'q': q.lower()}
         resp = rq.get(search_url, params=params, headers=self._header)
         return resp.json()
 
@@ -64,8 +64,7 @@ class Scoutify(object):
         resp = rq.get(url, params=params, headers=self._header)
         return resp.json()
 
-
-          def playlist(self, playlist_ids):
+    def playlist(self, playlist_ids):
         if not self._header:
             return "No token available"
         url = "{}/{}/{}".format(SPOTIFY_API_BASE_URL, 'playlists', playlist_ids)
