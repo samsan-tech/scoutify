@@ -9,13 +9,13 @@
 ## Installation
 
 ```bash
-pip install spotipy
+pip install scoutify
 ```
 
 or upgrade
 
 ```bash
-pip install spotipy --upgrade
+pip install scoutify --upgrade
 ```
 
 ## Quick Start
