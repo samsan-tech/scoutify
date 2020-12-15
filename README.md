@@ -1,15 +1,8 @@
 # Scoutify
 
-|Downloads| |Downloads_month| |PyPI version| |GitHub contributors|
-
-.. |Downloads| image:: https://pepy.tech/badge/scoutify
-   :target: https://pepy.tech/project/scoutify
-.. |Downloads_month| image:: https://pepy.tech/badge/scoutify/month
-   :target: https://pepy.tech/project/scoutify/month
-.. |PyPI version| image:: https://badge.fury.io/py/scoutify.svg
-   :target: https://badge.fury.io/py/scoutify
-.. |GitHub contributors| image:: https://img.shields.io/github/contributors/samsan-tech/scoutify.svg
-   :target: https://github.com/samsan-tech/scoutify/graphs/contributors
+![PyPI](https://img.shields.io/pypi/v/scoutify)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/scoutify)
+![GitHub](https://img.shields.io/github/license/samsan-tech/scoutify)
 
 
 
