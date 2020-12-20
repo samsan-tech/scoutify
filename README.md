@@ -1,6 +1,6 @@
 # Scoutify
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![PyPI](https://img.shields.io/pypi/v/scoutify)
@@ -52,6 +52,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/fijar-lazuardy"><img src="https://avatars0.githubusercontent.com/u/32705957?v=4" width="100px;" alt=""/><br /><sub><b>Fijar Lazuardy</b></sub></a><br /><a href="#infra-fijar-lazuardy" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/samsan-tech/scoutify/commits?author=fijar-lazuardy" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/andri81533"><img src="https://avatars0.githubusercontent.com/u/54887614?v=4" width="100px;" alt=""/><br /><sub><b>Andrirahmadhan</b></sub></a><br /><a href="https://github.com/samsan-tech/scoutify/commits?author=andri81533" title="Code">💻</a></td>
   </tr>
 </table>
 
