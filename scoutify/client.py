@@ -48,6 +48,20 @@ class Scoutify(object):
         resp = rq.get(url, params=params, headers=self._header)
         return resp.json()
 
+    def current_userprofile(self):
+        if not self._header:
+            return "No token available"
+        url = "{}/{}".format(SPOTIFY_API_BASE_URL, 'me')
+        resp = rq.get(url, headers=self._header)
+        return resp.json()
+
+    def find_userprofile(self,user_ids):
+        if not self._header:
+            return "No token available"
+        url = "{}/{}/{}".format(SPOTIFY_API_BASE_URL, 'user', user_ids)
+        resp = rq.get(url, headers=self._header)
+        return resp.json()
+
     def several_album(self, albums_ids):
         if not self._header:
             return "No token available"
@@ -91,5 +105,4 @@ class Scoutify(object):
         url = "{}/{}/{}/{}".format(SPOTIFY_API_BASE_URL, 'users', user_ids, 'playlists')
         resp = rq.get(url, headers=self._header)
         return resp.json()
-
 
