@@ -17,6 +17,14 @@
       ]
     },
     {
+      "login": "sanbhir14",
+      "name": "Sandi Bhirama",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/43607241?v=4",
+      "profile": "https://github.com/sanbhir14",
+      "contributions": [
+        "code"
+      ]
+    },
       "login": "andri81533",
       "name": "Andrirahmadhan",
       "avatar_url": "https://avatars0.githubusercontent.com/u/54887614?v=4",
@@ -24,7 +32,7 @@
       "contributions": [
         "code"
       ]
-    }
+    },
   ],
   "contributorsPerLine": 7,
   "projectName": "scoutify",
