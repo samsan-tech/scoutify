@@ -7,7 +7,7 @@ with open("README.md", "r") as f:
 
 setup(
     name='scoutify',
-    version='1.0.2',
+    version='1.0.4',
     description='A simple Python wrapper library for Spotify WEB API',
     long_description=long_description,
     long_description_content_type="text/markdown",
