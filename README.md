@@ -37,9 +37,13 @@ result = sp.search(search_type="artist", q="blackpink")
 print(result)
 ```
 
+## Issue, bug, suggestions
 If you have suggestions, bugs or other issues specific to this library,
-file them [here](https://github.com/samsan-tech/scoutify/issues).
-Or just send a pull request.
+file them [here](https://github.com/samsan-tech/scoutify/issues) or just send a pull request.
+
+## Documentation
+
+For full documentation, see [here](https://scoutify.readthedocs.io/)
 
 ## Contributors ✨
 
