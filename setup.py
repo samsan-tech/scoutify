@@ -18,6 +18,6 @@ setup(
         'requests>=2.20.0',
         'six>=1.10.0',
     ],
-    license='LICENSE.md',
+    license='LICENSE.md.md',
     packages=['scoutify']
 )
