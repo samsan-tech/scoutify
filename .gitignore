@@ -5,4 +5,5 @@ env/
 build
 dist
 scoutify.egg-info
-*/pyc
+*/.pyc
+__pycache__

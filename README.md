@@ -7,8 +7,6 @@
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/scoutify)
 ![GitHub](https://img.shields.io/github/license/samsan-tech/scoutify)
 
-
-
 ## Installation
 
 ```bash
@@ -20,6 +18,8 @@ or upgrade
 ```bash
 pip install scoutify --upgrade
 ```
+
+Required Python 3
 
 ## Quick Start
 
@@ -36,7 +36,6 @@ sp.set_access_token("YOUR_ACCESS_TOKEN")
 result = sp.search(search_type="artist", q="blackpink")
 print(result)
 ```
-
 
 If you have suggestions, bugs or other issues specific to this library,
 file them [here](https://github.com/samsan-tech/scoutify/issues).
