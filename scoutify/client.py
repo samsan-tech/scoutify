@@ -1,3 +1,4 @@
+import json
 from typing import Any
 
 import requests as rq
@@ -78,7 +79,34 @@ class Scoutify(object):
         resp = rq.get(url, params=params, headers=self._header)
         return resp.json()
 
-    def several_album(self, albums_ids):
+    def get_current_user_profile(self) -> Any:
+        """
+        Current user's profile
+
+        Returns:
+            Information about current user
+        """
+        if not self._header:
+            return "No token available"
+        url = "{}/{}".format(self._prefix, 'me')
+        resp = rq.get(url, headers=self._header)
+        return resp.json()
+
+    def find_user_profile(self, user_ids: str) -> Any:
+        """
+        Get a user's profile
+        Arguments:
+            user_ids: ID of a user wanted to find
+        Returns:
+            Information about user with id given.
+        """
+        if not self._header:
+            return "No token available"
+        url = "{}/{}/{}".format(self._prefix, 'user', user_ids)
+        resp = rq.get(url, headers=self._header)
+        return resp.json()
+
+    def several_album(self, albums_ids: list):
         """
         Searches for several albums
         Spotify recommends to use several albums instead of single album to prevent too many requests made.
@@ -93,7 +121,7 @@ class Scoutify(object):
         resp = rq.get(url, params=params, headers=self._header)
         return resp.json()
 
-    def several_track(self, tracks_ids):
+    def several_track(self, tracks_ids: list):
         """
         Searches for several tracks
         Spotify recommends to use several tracks instead of single track to prevent too many requests made.
@@ -108,35 +136,54 @@ class Scoutify(object):
         resp = rq.get(url, params=params, headers=self._header)
         return resp.json()
 
-    def playlist(self, playlist_ids):
+    def playlist(self, playlist_ids: str) -> Any:
+        """
+        Get information about playlist
+        Arguments:
+            playlist_ids: ID of playlist
+        Returns:
+            Information about playlist
+        """
         if not self._header:
             return "No token available"
         url = "{}/{}/{}".format(self._prefix, 'playlists', playlist_ids)
         resp = rq.get(url, headers=self._header)
         return resp.json()
     
-    def playlist_tracks(self, playlist_ids):
+    def playlist_tracks(self, playlist_ids: str):
+        """
+        Get tracks inside a playlist
+        Arguments:
+            playlist_ids: ID of playlist
+        """
         if not self._header:
             return "No token available"
         url = "{}/{}/{}/{}".format(self._prefix, 'playlists', playlist_ids, 'tracks')
         resp = rq.get(url, headers=self._header)
         return resp.json()
     
-    def current_user_playlists(self):
+    def get_current_user_playlists(self) -> Any:
+        """
+        Get all playlists of current user.
+        Returns:
+            All playlists of current user.
+        """
         if not self._header:
             return "No token available"
         url = "{}/{}/{}".format(self._prefix, 'me', 'playlists')
         resp = rq.get(url, headers=self._header)
         return resp.json()
     
-    def user_playlists(self, user_ids):
+    def user_playlists(self, user_ids: str) -> Any:
+        """
+        Get all playlists of a user.
+        Arguments:
+            user_ids: ID of a user.
+        Returns:
+            All playlists of user with ID given.
+        """
         if not self._header:
             return "No token available"
         url = "{}/{}/{}/{}".format(self._prefix, 'users', user_ids, 'playlists')
         resp = rq.get(url, headers=self._header)
         return resp.json()
-
-
-    
-
-
