@@ -78,6 +78,45 @@ class Scoutify(object):
         params = {'ids': ",".join(artist_ids)}
         resp = rq.get(url, params=params, headers=self._header)
         return resp.json()
+    
+    #NEW-S
+    def artist_albums(self, artist_ids: str) -> any:
+        """
+        Get albums belongs to artist
+        Arguments:
+            artist_ids: ID of Artist
+        """
+        if not self._header:
+            return "No token available"
+        url = "{}/{}/{}/albums".format(self._prefix, 'artists', artist_ids)
+        resp = rq.get(url, headers=self._header)
+        return resp.json()
+    
+    #NEW-S
+    def artist_top_tracks(self, artist_ids: str) -> any:
+         """
+        Get top tracks from an artist
+        Arguments:
+            artist_ids: ID of Artist
+        """
+        if not self._header:
+            return "No token available"
+        url = "{}/{}/{}/top-tracks".format(self._prefix, 'artists', artist_ids)
+        resp = rq.get(url, headers=self._header)
+        return resp.json()
+    
+    #NEW-S
+    def artist_related(self, artist_ids: str) -> any:
+         """
+        Get information of related artist
+        Arguments:
+            artist_ids: ID of Artist
+        """
+        if not self._header:
+            return "No token available"
+        url = "{}/{}/{}/related-artists".format(self._prefix, 'artists', artist_ids)
+        resp = rq.get(url, headers=self._header)
+        return resp.json()
 
     def get_current_user_profile(self) -> Any:
         """
@@ -120,7 +159,20 @@ class Scoutify(object):
         params = {'ids': ",".join(albums_ids)}
         resp = rq.get(url, params=params, headers=self._header)
         return resp.json()
-
+    
+    # NEW-S
+    def album_tracks(self, albums_ids: str) -> Any:
+        """
+        Get tracks inside an albums
+        Arguments:
+            albums_ids: ID of Album
+        """
+        if not self._header:
+            return "No token available"
+        url = "{}/{}/{}/tracks".format(self._prefix, 'albums', albums_ids)
+        resp = rq.get(url, headers=self._header)
+        return resp.json()
+    
     def several_track(self, tracks_ids: list):
         """
         Searches for several tracks
