@@ -12,7 +12,14 @@
       "profile": "https://github.com/fijar-lazuardy",
       "contributions": [
         "infra",
-        "code"
+        "code",
+        "content",
+        "doc",
+        "example",
+        "ideas",
+        "maintenance",
+        "review",
+        "tutorial"
       ]
     }
   ],
