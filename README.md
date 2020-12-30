@@ -1,13 +1,11 @@
 # Scoutify
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![PyPI](https://img.shields.io/pypi/v/scoutify)
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/scoutify)
 ![GitHub](https://img.shields.io/github/license/samsan-tech/scoutify)
-
-
 
 ## Installation
 
@@ -20,6 +18,8 @@ or upgrade
 ```bash
 pip install scoutify --upgrade
 ```
+
+Required Python 3
 
 ## Quick Start
 
@@ -37,10 +37,13 @@ result = sp.search(search_type="artist", q="blackpink")
 print(result)
 ```
 
-
+## Issue, bug, suggestions
 If you have suggestions, bugs or other issues specific to this library,
-file them [here](https://github.com/samsan-tech/scoutify/issues).
-Or just send a pull request.
+file them [here](https://github.com/samsan-tech/scoutify/issues) or just send a pull request.
+
+## Documentation
+
+For full documentation, see [here](https://scoutify.readthedocs.io/)
 
 ## Contributors ✨
 
@@ -52,6 +55,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/fijar-lazuardy"><img src="https://avatars0.githubusercontent.com/u/32705957?v=4" width="100px;" alt=""/><br /><sub><b>Fijar Lazuardy</b></sub></a><br /><a href="#infra-fijar-lazuardy" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/samsan-tech/scoutify/commits?author=fijar-lazuardy" title="Code">💻</a> <a href="#content-fijar-lazuardy" title="Content">🖋</a> <a href="https://github.com/samsan-tech/scoutify/commits?author=fijar-lazuardy" title="Documentation">📖</a> <a href="#example-fijar-lazuardy" title="Examples">💡</a> <a href="#ideas-fijar-lazuardy" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-fijar-lazuardy" title="Maintenance">🚧</a> <a href="https://github.com/samsan-tech/scoutify/pulls?q=is%3Apr+reviewed-by%3Afijar-lazuardy" title="Reviewed Pull Requests">👀</a> <a href="#tutorial-fijar-lazuardy" title="Tutorials">✅</a></td>
+    <td align="center"><a href="https://github.com/adityanandaaa"><img src="https://avatars1.githubusercontent.com/u/54924541?v=4" width="100px;" alt=""/><br /><sub><b>Aditya Nanda Tri Prakoso</b></sub></a><br /><a href="https://github.com/samsan-tech/scoutify/commits?author=adityanandaaa" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/sanbhir14"><img src="https://avatars3.githubusercontent.com/u/43607241?v=4" width="100px;" alt=""/><br /><sub><b>Sandi Bhirama</b></sub></a><br /><a href="https://github.com/samsan-tech/scoutify/commits?author=sanbhir14" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/andri81533"><img src="https://avatars0.githubusercontent.com/u/54887614?v=4" width="100px;" alt=""/><br /><sub><b>Andrirahmadhan</b></sub></a><br /><a href="https://github.com/samsan-tech/scoutify/commits?author=andri81533" title="Code">💻</a></td>
   </tr>
 </table>
 
